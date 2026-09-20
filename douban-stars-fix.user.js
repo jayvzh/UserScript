@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         豆瓣星星修复 (Linux)
+// @name         豆瓣星星显示修复 (Linux)
 // @namespace    https://novelastrid.github.io/douban-stars-fix
-// @version      1.1.0
+// @version      1.1.1
 // @description  修复 Linux 上新内核浏览器(Edge/Chrome/Firefox)豆瓣电影页星级精灵图不显示的问题：将跨域样式表中的 image-set(...dppx) 背景降级为普通 url() 内联背景。支持懒加载短评。
 // @author       JayvZh
 // @icon         data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2064%2064%22%3E%3Crect%20width=%2264%22%20height=%2264%22%20rx=%2214%22%20fill=%22%23219653%22/%3E%3Cpath%20d=%22M32%2012l5.6%2012.1%2013.4%201.6-9.9%209.1%202.6%2013.2L32%2041.6%2020.3%2048l2.6-13.2-9.9-9.1%2013.4-1.6z%22%20fill=%22%23fff%22/%3E%3C/svg%3E
