@@ -5,6 +5,9 @@
 // @description  在周额度/5小时额度的重置时间后显示倒计时
 // @author       You
 // @match        https://bigmodel.cn/coding-plan/personal/usage
+// @match        https://bigmodel.cn/coding-plan/personal/overview
+// @match        https://open.bigmodel.cn/coding-plan/personal/usage
+// @match        https://open.bigmodel.cn/coding-plan/personal/overview
 // @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACP0lEQVR42u2b3Y3DIAyAGYGne74RGIERWOCkjMImGaEjMEJHyAgZIZeTOCmqAjH4J0nrBz9VJfYXxzbGmK+fxXyyGAWgAEQf6FcJq8QdCfn3twFgs1HjKtMqS4NM+X8hr3MrAD4rvxDKyOUd1IYnYsNfJVGDoFjECRi+B8JdAUBsVPyZld8Lgin/3rJePAuABb71uSOYbYPnDPQGKwnAAaL6n1ID0Xc6AGBPvZ9Ej/HzgSKesYaYDrzNcQI4Mj4KFS+REkLLNz9VHupPqCjnihdaagCpEtXdSXW8q2SNRAkgVoy3iDf4yOs8EB5kKxAiBQBHGXA2xu+t6RGeUPocHBZAIlbWbN78qzyQMaHrU+hZFBvta/mcIzv4XgCpEGHNRQGYQqZKPQA8g+tLAGjWu7TQiEktJwIoee7YAsAWlBtuAmAorG2hAEIh7ZmbADCFtBigAMYWF7ooALAN0EgabgYgQDMYVEF7MwAWuj4kjTyJNzESAExhj+CPAATG9AcB4JHyfZAOwxGAKNDo4O4YDy22vCOAJXvCRwPwVwYwf7oHxCvHAIks8K/cvCmzI0EGIMkCEnWAlHTVARKVoIR0V4ISewEJQe0FuHeDEoLaDXL3AyQE1Q/g7ghxC7ojxN0T5BZ0T5C7K8x9aErSFeY8F+AUsnMBzpMh6bmB7pMhrrNBSddHnQ1ynQ5zzAmwnQ5zzQdQlrys8wE6IaIzQjolpnOCOimqs8I6La73BfTGiN4Z0ltjem9Qb44qAAXwfvILK1IiiSWz9XkAAAAASUVORK5CYII=
 // @grant        none
 // @noframes
@@ -64,3 +67,4 @@
 
     tick();
 })();
+
