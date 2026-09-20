@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         NexusPHP PT 页面字体间距修复（Linux）
 // @namespace    local.eleven.cjk-nbsp-fix
-// @version      1.1
-// @description  规整汉字之间的空格/nbsp/全角空格，修复老站（NexusPHP 等）硬撑间距在 Linux 下挤压或过宽的问题
+// @version      1.2
+// @description  仅在 NexusPHP PT 站点生效：规整菜单等位置汉字之间的空格/nbsp/全角空格，修复老站硬撑间距在 Linux 下挤压或过宽的问题
 // @author       十一
 // @homepage     https://scriptcat.org/zh-CN/users/213638
 // @supportURL   https://scriptcat.org/zh-CN/users/213638
@@ -15,7 +15,20 @@
 (function () {
     'use strict';
 
-    // NexusPHP 系站点通用菜单：padding 统一，文字间距交给脚本规整
+    // 仅对 NexusPHP 站点生效：检测其标志性结构/链接，避免影响其他网站
+    function isNexusPHP() {
+        if (document.getElementById('mainmenu')) return true;
+        if (document.getElementById('info_block')) return true;
+        if (document.querySelector(
+            'a[href*="torrents.php"], a[href*="mybonus.php"], a[href*="usercp.php"], a[href*="logout.php"], a[href*="forums.php"]'
+        )) return true;
+        const gen = document.querySelector('meta[name="generator"]');
+        if (gen && /NexusPHP/i.test(gen.content || '')) return true;
+        return /Powered by NexusPHP/i.test(document.title || '');
+    }
+    if (!isNexusPHP()) return;
+
+    // NexusPHP 通用菜单：padding 统一，文字间距交给脚本规整
     GM_addStyle(`
         #mainmenu li a {
             letter-spacing: normal !important;
