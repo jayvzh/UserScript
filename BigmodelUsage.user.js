@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         智谱订阅倒计时
 // @namespace    https://docs.scriptcat.org/
-// @version      0.4.0
+// @version      0.4.2
 // @description  在周额度/5小时额度的重置时间后显示倒计时
 // @author       You
 // @match        https://bigmodel.cn/coding-plan/personal/usage
